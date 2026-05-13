@@ -37,5 +37,7 @@ result = chain.invoke({
 
 print(type(result))  # <class 'CodeReview'>
 print(result.score)  # 6
-print(result.issues)  # ['使用 range(len(lst)) 遍历列表不符合 Python 最佳实践，应直接迭代元素', '未处理 lst 可能为 None 或非可迭代对象的情况']
-print(result.suggestions)  # ['改用 for item in lst: print(item)']
+# ['使用 range(len(lst)) 遍历列表不符合 Python 最佳实践，应直接迭代元素', '未处理 lst 可能为 None 或非可迭代对象的情况']
+print(result.issues)
+# ['改用 for item in lst: print(item)'...]
+print(result.suggestions)
